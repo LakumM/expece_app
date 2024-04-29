@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +20,6 @@ class HomeScreen extends StatelessWidget {
                 textStyle:
                     TextStyle(fontSize: 28, fontWeight: FontWeight.w600)),
           ),
-          centerTitle: true,
           actions: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -174,18 +178,18 @@ class HomeScreen extends StatelessWidget {
                     title: Text("Shop",
                         style: GoogleFonts.varelaRound(
                           textStyle: (TextStyle(
-                              fontSize: 22, fontWeight: FontWeight.w600)),
+                              fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
                       "Buy New Clothes",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(fontSize: 18)),
+                          textStyle: TextStyle(fontSize: 17)),
                     ),
                     trailing: Text(
-                      "- 1500",
+                      "Rs.1500/-",
                       style: GoogleFonts.varelaRound(
                           textStyle: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold)),
+                              fontSize: 17, fontWeight: FontWeight.bold)),
                     ),
                   ),
                   ListTile(
@@ -202,15 +206,15 @@ class HomeScreen extends StatelessWidget {
                     title: Text("Electronic",
                         style: GoogleFonts.varelaRound(
                           textStyle: (TextStyle(
-                              fontSize: 22, fontWeight: FontWeight.w600)),
+                              fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
                       "Buy New iPhone",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(fontSize: 18)),
+                          textStyle: TextStyle(fontSize: 17)),
                     ),
                     trailing: Text(
-                      "- 88,000",
+                      "Rs.88,000/-",
                       style: GoogleFonts.varelaRound(
                           textStyle: TextStyle(
                               fontSize: 18, fontWeight: FontWeight.w900)),
@@ -240,7 +244,7 @@ class HomeScreen extends StatelessWidget {
                         Text("Monday, 13",
                             style: GoogleFonts.acme(
                                 textStyle: TextStyle(fontSize: 20))),
-                        Text("Rs. 600/-",
+                        Text("Rs.600/-",
                             style: GoogleFonts.acme(
                                 textStyle: TextStyle(fontSize: 20))),
                       ],
@@ -267,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                     title: Text("Transportation",
                         style: GoogleFonts.varelaRound(
                           textStyle: (TextStyle(
-                              fontSize: 22, fontWeight: FontWeight.w600)),
+                              fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
                       "Trip to Malang",
@@ -277,7 +281,7 @@ class HomeScreen extends StatelessWidget {
                       )),
                     ),
                     trailing: Text(
-                      "- 600",
+                      "Rs.600/-",
                       style: GoogleFonts.varelaRound(
                           textStyle: TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold)),
@@ -287,29 +291,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ],
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(icon: Icon(Ionicons.home), label: ""),
-            BottomNavigationBarItem(icon: Icon(Ionicons.bar_chart), label: ""),
-            BottomNavigationBarItem(
-                icon: Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                        color: Colors.pink.shade200,
-                        borderRadius: BorderRadius.circular(11)),
-                    child: Icon(
-                      Ionicons.add,
-                      color: Colors.white,
-                    )),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(Ionicons.notifications), label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(Ionicons.navigate_sharp), label: ""),
-          ],
-          unselectedItemColor: Colors.grey,
-          selectedItemColor: Colors.pink.shade200,
         ));
   }
 }

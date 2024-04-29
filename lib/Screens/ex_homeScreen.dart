@@ -1,4 +1,4 @@
-import 'package:expece_app/Screens/home_Screen.dart';
+import 'package:expece_app/Screens/homepage.dart';
 import 'package:expece_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -83,11 +83,11 @@ class Expence_HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(color: Colors.white),
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => HomeScreen(),
-                          ));
+                      Navigator.pushReplacement(context, MaterialPageRoute(
+                        builder: (context) {
+                          return HomePage();
+                        },
+                      ));
                     },
                     child: Icon(
                       Ionicons.arrow_forward_sharp,

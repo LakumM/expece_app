@@ -9,7 +9,10 @@ class Assets {
   static const String fontsPoppinsExtraBold =
       'assets/fonts/Poppins-ExtraBold.ttf';
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
+  static const String pngImageBarchart = 'assets/pngImage/barchart.png';
+  static const String pngImageBarchart1 = 'assets/pngImage/barchart1.png';
   static const String pngImageEGraph = 'assets/pngImage/eGraph.png';
+  static const String pngImageExdev = 'assets/pngImage/exdev.png';
   static const String pngImageGirla = 'assets/pngImage/girla.png';
   static const String pngImageGraph = 'assets/pngImage/graph.png';
   static const String pngImageGraphs = 'assets/pngImage/graphs.png';
