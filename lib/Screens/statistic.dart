@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:primer_progress_bar/primer_progress_bar.dart';
 
 class Statestic_Screen extends StatelessWidget {
   const Statestic_Screen({super.key});
@@ -31,7 +32,7 @@ class Statestic_Screen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
 
-                  /// expence container
+                  /// expense container
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                     child: Column(
@@ -144,13 +145,31 @@ class Statestic_Screen extends StatelessWidget {
                         color: Colors.grey)),
               ),
             ),
+
+            /// Expense Progress_Bar
             Center(
-              child: Container(
-                  width: 380,
-                  child: Image.asset(
-                    'assets/pngImage/exdev.png',
-                    fit: BoxFit.fitWidth,
-                  )),
+              child: PrimerProgressBar(segments: [
+                Segment(
+                    value: 40, color: Colors.indigo, valueLabel: Text('40%')),
+                Segment(
+                    value: 25,
+                    color: Colors.pinkAccent,
+                    valueLabel: Text('25%')),
+                Segment(
+                    value: 15,
+                    color: Colors.orangeAccent,
+                    valueLabel: Text('15%')),
+                Segment(
+                    value: 10,
+                    color: Colors.blue.shade200,
+                    valueLabel: Text('10%')),
+                Segment(
+                    value: 5, color: Colors.redAccent, valueLabel: Text('5%')),
+                Segment(
+                    value: 5,
+                    color: Colors.greenAccent,
+                    valueLabel: Text('5%')),
+              ]),
             ),
             SizedBox(
               height: 20,
