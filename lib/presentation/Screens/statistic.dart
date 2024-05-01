@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
@@ -38,15 +37,15 @@ class Statestic_Screen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Total Expence",
                           style: TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
                               color: Colors.white),
                         ),
-                        SizedBox(height: 12),
-                        Row(
+                        const SizedBox(height: 12),
+                        const Row(
                           children: [
                             Text(
                               "Rs 90,100/- /",
@@ -64,17 +63,26 @@ class Statestic_Screen extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(
-                          height: 10,
+                        const SizedBox(
+                          height: 9,
                         ),
                         Center(
-                          child: Container(
-                            width: 340,
-                            height: 7,
-                            decoration: BoxDecoration(
-                                color: Colors.yellow.shade200,
-                                borderRadius: BorderRadius.circular(8)),
-                          ),
+                          child: Stack(children: [
+                            Container(
+                              width: 350,
+                              height: 7.5,
+                              decoration: BoxDecoration(
+                                  color: Color(0xFF322D4F),
+                                  borderRadius: BorderRadius.circular(8)),
+                            ),
+                            Container(
+                              width: 220,
+                              height: 7.5,
+                              decoration: BoxDecoration(
+                                  color: Color(0xFFFFDE93),
+                                  borderRadius: BorderRadius.circular(8)),
+                            ),
+                          ]),
                         ),
                       ],
                     ),

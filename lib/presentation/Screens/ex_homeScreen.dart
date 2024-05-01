@@ -1,5 +1,5 @@
-import 'package:expece_app/Screens/homepage.dart';
 import 'package:expece_app/generated/assets.dart';
+import 'package:expece_app/presentation/Screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
@@ -27,10 +27,11 @@ class Expence_HomeScreen extends StatelessWidget {
               margin: EdgeInsets.only(left: 42, top: 200),
               height: MediaQuery.of(context).size.height * 0.55,
               width: MediaQuery.of(context).size.width * 0.8,
-              decoration: BoxDecoration(color: Color(0xFDF9F9FD), boxShadow: [
+              decoration:
+                  const BoxDecoration(color: Color(0xFDF9F9FD), boxShadow: [
                 BoxShadow(spreadRadius: 0, color: Colors.black),
               ]),
-              child: Column(
+              child: const Column(
                 children: [
                   SizedBox(
                     height: 230,
@@ -41,7 +42,7 @@ class Expence_HomeScreen extends StatelessWidget {
                           fontSize: 28,
                           fontWeight: FontWeight.w700,
                           color: Colors.black)),
-                  Text("your expence",
+                  Text("your expense",
                       style: TextStyle(
                           fontFamily: Assets.fontsMonaSansBold,
                           fontSize: 28,
@@ -56,8 +57,8 @@ class Expence_HomeScreen extends StatelessWidget {
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                           color: Colors.black54)),
-                  Text("expence right now",
-                      style: const TextStyle(
+                  Text("expense right now",
+                      style: TextStyle(
                           fontFamily: Assets.fontsMonaSansBold,
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
@@ -89,11 +90,6 @@ class Expence_HomeScreen extends StatelessWidget {
                         },
                       ));
                     },
-                    child: Icon(
-                      Ionicons.arrow_forward_sharp,
-                      color: Colors.white,
-                      size: 30,
-                    ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.pink.shade200,
                       elevation: 0,
@@ -101,6 +97,11 @@ class Expence_HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(11),
                         side: BorderSide(color: Colors.white),
                       ),
+                    ),
+                    child: const Icon(
+                      Ionicons.arrow_forward_sharp,
+                      color: Colors.white,
+                      size: 30,
                     ),
                   )),
             ),

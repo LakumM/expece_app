@@ -1,7 +1,7 @@
-import 'package:expece_app/Screens/home_Screen.dart';
-import 'package:expece_app/Screens/statistic.dart';
+import 'package:expece_app/presentation/Screens/statistic.dart';
 import 'package:flutter/material.dart';
 import 'package:cool_nav/cool_nav.dart';
+import 'home_Screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

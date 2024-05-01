@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 180,
               width: 370,
               decoration: BoxDecoration(
-                color: Color(0xFF4F5CCB),
+                color: const Color(0xFF4F5CCB),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Stack(
@@ -66,19 +66,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 10),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "Expence Total",
                           style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 22,
                               color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           "Rs 90,100/-",
                           style: TextStyle(
                               fontWeight: FontWeight.w800,
@@ -92,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               decoration: BoxDecoration(
                                   color: Colors.redAccent.shade200,
                                   borderRadius: BorderRadius.circular(11)),
-                              child: Text(
+                              child: const Text(
                                 "+ RS 24,000",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w400,
@@ -100,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     color: Colors.white),
                               ),
                             ),
-                            Text(
+                            const Text(
                               "  then last month",
                               style: TextStyle(
                                   fontWeight: FontWeight.w400,
@@ -115,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Align(
@@ -130,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -157,8 +158,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Divider(
                       color: Colors.black,
                       thickness: 2,
@@ -171,13 +172,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                             color: Color(0xBAA2E3FF),
                             borderRadius: BorderRadius.circular(11)),
-                        child: Icon(
+                        child: const Icon(
                           Ionicons.cart_outline,
                           color: Colors.indigo,
                         )),
                     title: Text("Shop",
                         style: GoogleFonts.varelaRound(
-                          textStyle: (TextStyle(
+                          textStyle: (const TextStyle(
                               fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
@@ -188,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     trailing: Text(
                       "Rs.1500/-",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                               fontSize: 17, fontWeight: FontWeight.bold)),
                     ),
                   ),
@@ -199,13 +200,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                             color: Color(0xBAFFE1A2),
                             borderRadius: BorderRadius.circular(11)),
-                        child: Icon(
+                        child: const Icon(
                           Ionicons.phone_portrait_outline,
                           color: Colors.orangeAccent,
                         )),
                     title: Text("Electronic",
                         style: GoogleFonts.varelaRound(
-                          textStyle: (TextStyle(
+                          textStyle: (const TextStyle(
                               fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
@@ -216,14 +217,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     trailing: Text(
                       "Rs.88,000/-",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                               fontSize: 18, fontWeight: FontWeight.w900)),
                     ),
                   )
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -250,8 +251,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Divider(
                       color: Colors.black,
                       thickness: 2,
@@ -264,26 +265,26 @@ class _HomeScreenState extends State<HomeScreen> {
                         decoration: BoxDecoration(
                             color: Color(0x90EE9979),
                             borderRadius: BorderRadius.circular(11)),
-                        child: Icon(
+                        child: const Icon(
                           Ionicons.car_outline,
                           color: Colors.deepOrange,
                         )),
                     title: Text("Transportation",
                         style: GoogleFonts.varelaRound(
-                          textStyle: (TextStyle(
+                          textStyle: (const TextStyle(
                               fontSize: 21, fontWeight: FontWeight.w600)),
                         )),
                     subtitle: Text(
                       "Trip to Malang",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                         fontSize: 18,
                       )),
                     ),
                     trailing: Text(
                       "Rs.600/-",
                       style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold)),
                     ),
                   ),
