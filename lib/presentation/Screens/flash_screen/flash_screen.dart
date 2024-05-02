@@ -1,10 +1,11 @@
 import 'package:expece_app/generated/assets.dart';
-import 'package:expece_app/presentation/Screens/homepage.dart';
+import 'package:expece_app/presentation/Screens/home/botem_navigator.dart';
+import 'package:expece_app/presentation/Screens/on_board/user_login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 
-class Expence_HomeScreen extends StatelessWidget {
+class ExFlash_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -86,7 +87,7 @@ class Expence_HomeScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(context, MaterialPageRoute(
                         builder: (context) {
-                          return HomePage();
+                          return User_LoginScreen();
                         },
                       ));
                     },

@@ -21,8 +21,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     TextStyle(fontSize: 28, fontWeight: FontWeight.w600)),
           ),
           actions: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+            Container(
+              child: DropdownMenu(
+                dropdownMenuEntries: [
+                  DropdownMenuEntry(value: Container(), label: "This Month")
+                ],
+                width: 150,
+                enableSearch: true,
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Icon(Ionicons.search),
             )
           ],

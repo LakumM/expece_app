@@ -17,5 +17,10 @@ class Assets {
   static const String pngImageGraph = 'assets/pngImage/graph.png';
   static const String pngImageGraphs = 'assets/pngImage/graphs.png';
   static const String pngImageGraphs1 = 'assets/pngImage/graphs1.png';
+  static const String pngImageIcFacebook = 'assets/pngImage/ic_facebook.png';
+  static const String pngImageIcFacebookrec =
+      'assets/pngImage/ic_facebookrec.png';
+  static const String pngImageIcGoogle = 'assets/pngImage/ic_google.png';
+  static const String pngImageIcTwitter = 'assets/pngImage/ic_twitter.png';
   static const String pngImagePiechart = 'assets/pngImage/piechart.png';
 }

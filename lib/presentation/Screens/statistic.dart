@@ -16,6 +16,20 @@ class Statestic_Screen extends StatelessWidget {
                 textStyle:
                     TextStyle(fontSize: 32, fontWeight: FontWeight.w600)),
           ),
+          actions: [
+            Container(
+              margin: EdgeInsets.only(right: 10, bottom: 10),
+              height: 50,
+              color: Colors.grey,
+              child: DropdownMenu(
+                dropdownMenuEntries: [
+                  DropdownMenuEntry(value: Container(), label: "This Month")
+                ],
+                width: 150,
+                enableSearch: true,
+              ),
+            )
+          ],
         ),
         body: SingleChildScrollView(
           child:

@@ -1,4 +1,5 @@
-import 'package:expece_app/presentation/Screens/ex_homeScreen.dart';
+import 'package:expece_app/presentation/Screens/flash_screen/flash_screen.dart';
+import 'package:expece_app/presentation/Screens/on_board/user_login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Expence_HomeScreen());
+        home: ExFlash_Screen());
   }
 }

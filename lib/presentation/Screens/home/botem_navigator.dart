@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:cool_nav/cool_nav.dart';
 import 'home_Screen.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Bot_Navigator extends StatefulWidget {
+  const Bot_Navigator({super.key});
 
   @override
-  State<HomePage> createState() => HomePageState();
+  State<Bot_Navigator> createState() => Bot_NavigatorState();
 }
 
-class HomePageState extends State<HomePage> {
+class Bot_NavigatorState extends State<Bot_Navigator> {
   int selectedIndex = 0;
 
   List<Widget> navPage = [
