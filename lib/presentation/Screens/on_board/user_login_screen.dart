@@ -1,8 +1,8 @@
-import 'package:expece_app/domain/cus_text.dart';
+import 'package:expece_app/presentation/Screens/cus_widget/cus_text.dart';
 import 'package:expece_app/presentation/Screens/on_board/signupscreen.dart';
 import 'package:flutter/material.dart';
-import '../../../domain/cuselevatedbtn.dart';
-import '../../../domain/textFieldDec.dart';
+import '../cus_widget/cuselevatedbtn.dart';
+import '../cus_widget/textFieldDec.dart';
 
 class User_LoginScreen extends StatefulWidget {
   const User_LoginScreen({super.key});

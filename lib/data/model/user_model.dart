@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class User_Model {
   int uID;
   String uName;

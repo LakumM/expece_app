@@ -1,8 +1,9 @@
 import 'package:expece_app/presentation/Screens/home/botem_navigator.dart';
-import 'package:expece_app/presentation/Screens/home/home_Screen.dart';
+
 import 'package:flutter/material.dart';
-import '../../../domain/cuselevatedbtn.dart';
-import '../../../domain/textFieldDec.dart';
+import '../cus_widget/cuselevatedbtn.dart';
+
+import '../cus_widget/textFieldDec.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
